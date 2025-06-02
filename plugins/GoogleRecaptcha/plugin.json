@@ -1,0 +1,8 @@
+{
+    "plugin_id": "GoogleRecaptcha",
+    "name": "Google reCAPTCHA",
+    "description": "Protects websites from bots and spam.",
+    "version": "1.0.0",
+    "img": "google_recaptcha.png",
+    "main_route": "admin.plugin.google_recaptcha.settings"
+}

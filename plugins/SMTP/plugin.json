@@ -1,0 +1,8 @@
+{
+    "plugin_id": "SMTP",
+    "name": "SMTP",
+    "description": "Send emails from your platform.",
+    "version": "1.0.0",
+    "img": "smtp.png",
+    "main_route": "admin.plugin.smtp.settings"
+}   

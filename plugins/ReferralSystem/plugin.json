@@ -1,0 +1,8 @@
+{
+    "plugin_id": "ReferralSystem",
+    "name": "Referral System",
+    "description": "The GoBiz Referral System allows you to enable or disable referral tracking and rewards with a single toggle.",
+    "version": "1.0.0",
+    "img": "referral.png",
+    "main_route": "admin.plugin.referral.system"
+}    

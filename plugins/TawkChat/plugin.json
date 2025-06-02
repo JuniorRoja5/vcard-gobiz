@@ -1,0 +1,8 @@
+{
+    "plugin_id": "TawkChat",
+    "name": "Tawk.to Chatbot",
+    "description": "Tawk.to is a tool for live chat with customers",
+    "version": "1.0.0",
+    "img": "tawk.png",
+    "main_route": "admin.plugin.tawkchat.settings"
+}

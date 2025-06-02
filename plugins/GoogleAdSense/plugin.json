@@ -1,0 +1,8 @@
+{
+    "plugin_id": "GoogleAdSense",       
+    "name": "Google AdSense",
+    "description": "Enables website owners to earn revenue by displaying targeted ads.",
+    "version": "1.0.0",
+    "img": "google_adsense.png",
+    "main_route": "admin.plugin.google_adsense.settings"
+}   

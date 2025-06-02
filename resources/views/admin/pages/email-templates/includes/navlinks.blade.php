@@ -1,0 +1,24 @@
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675196']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675196' ? 'active' : '' }}">{{ __('Appointment (Pending)') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675197']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675197' ? 'active' : '' }}">{{ __('Appointment (Confirmed)') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675198']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675198' ? 'active' : '' }}">{{ __('Appointment (Canceled)') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675199']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675199' ? 'active' : '' }}">{{ __('Appointment (Rescheduled)') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675200']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675200' ? 'active' : '' }}">{{ __('Appointment (Completed)') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675201']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675201' ? 'active' : '' }}">{{ __('Appointment Received (vCard Owner)') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675202']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675202' ? 'active' : '' }}">{{ __('Custom Domain Processed') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675203']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675203' ? 'active' : '' }}">{{ __('Custom Domain Approval') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675204']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675204' ? 'active' : '' }}">{{ __('Custom Domain Rejection') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675205']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675205' ? 'active' : '' }}">{{ __('Service Enquiry') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675206']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675206' ? 'active' : '' }}">{{ __('Plan Expiried') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675207']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675207' ? 'active' : '' }}">{{ __('Plan Expiry Reminder') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675208']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675208' ? 'active' : '' }}">{{ __('Welcome Email') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675209']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675209' ? 'active' : '' }}">{{ __('NFC Card Order Confirmation (Customer)') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675210']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675210' ? 'active' : '' }}">{{ __('NFC Card Order Delivery Status') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675211']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675211' ? 'active' : '' }}">{{ __('New NFC Card Order (Website Owner)') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675212']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675212' ? 'active' : '' }}">{{ __('Reset Password') }}</a>
+<a href="{{ route('admin.email.templates.index', ['id' => '584922675213']) }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675213' ? 'active' : '' }}">{{ __('Verify Email Address') }}</a>
+@if (Illuminate\Support\Facades\File::exists(base_path('plugins/TwoFactorAuthentiation/plugin.json')))
+    <a href="{{ route('admin.email.templates.index', ['id' => '584922675300']) }}" 
+       class="list-group-item list-group-item-action d-flex align-items-center {{ $link == '584922675300' ? 'active' : '' }}">
+        {{ __('Two Factor OTP Email') }}
+    </a>
+@endif

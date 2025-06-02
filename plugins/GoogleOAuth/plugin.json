@@ -1,0 +1,8 @@
+{
+    "plugin_id": "GoogleOAuth",
+    "name": "Google OAuth",
+    "description": "Google OAuth enables secure user authentication.",
+    "version": "1.0.0",
+    "img": "google_oauth.png",
+    "main_route": "admin.plugin.google_oauth.settings"
+}

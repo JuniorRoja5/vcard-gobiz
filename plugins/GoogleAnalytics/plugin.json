@@ -1,0 +1,8 @@
+{
+    "plugin_id": "GoogleAnalytics",
+    "name": "Google Analytics",
+    "description": "Tracks and reports website traffic and user behavior insights.",
+    "version": "1.0.0",
+    "img": "google_analytics.png",
+    "main_route": "admin.plugin.google_analytics.settings"
+}   

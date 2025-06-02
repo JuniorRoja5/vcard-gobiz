@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{ __('New Appointment') }}</title>
+    <style>
+        /* Basic Tailwind-inspired styles for email */
+        /* Tailwind CSS for email styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 16px;
+        }
+
+        .text {
+            font-size: 1rem;
+            color: #4a5568;
+            margin-bottom: 16px;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        .domain-details {
+            background-color: #f7fafc;
+            padding: 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin-top: 16px;
+        }
+
+        .domain-details p {
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 8px;
+        }
+
+        .appointment-details {
+            background-color: #f7fafc;
+            padding: 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin-top: 16px;
+        }
+
+        .appointment-details p {
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 8px;
+        }
+
+        .list-item {
+            margin-bottom: 8px;
+        }
+
+        .list-item span {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #3182ce;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            margin-top: 24px;
+        }
+
+        .button:hover {
+            background-color: #2b6cb0;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.875rem;
+            color: #718096;
+            margin-top: 32px;
+        }
+
+        .footer p {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                margin: 20px auto;
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section --> 
+        {!! strtr($details['emailContent'], [
+            ':appname' => env('APP_NAME'),            
+            ':registeredname' => $details['registeredName'] ?? '',
+            ':registeredemail' => $details['registeredEmail'] ?? '',
+            ':otpnumber' => $details['otpNumber'] ?? '',
+        ]) !!}
+
+        <!-- Footer Section -->
+        <div class="footer">
+            &copy; {{ env('APP_NAME') }}. {{ __('All rights reserved.') }}
+        </div>
+    </div> 
+</body>
+
+</html>

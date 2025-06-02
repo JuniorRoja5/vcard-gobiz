@@ -1,0 +1,3 @@
+<a href="{{ route('user.account') }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == 'profile' ? 'active' : '' }}">{{ __('Profile') }}</a>
+<a href="{{ route('user.change.password') }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == 'password' ? 'active' : '' }}">{{ __('Change Password') }}</a>
+<a href="{{ route('user.settings') }}" class="list-group-item list-group-item-action d-flex align-items-center {{ $link == 'settings' ? 'active' : '' }}">{{ __('Settings') }}</a>

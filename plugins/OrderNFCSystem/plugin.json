@@ -1,0 +1,8 @@
+{
+    "plugin_id": "OrderNFCSystem",
+    "name": "NFC Order System",
+    "description": "GoBiz NFC order system lets you enable or disable the order system with full control.",
+    "version": "1.0.0",
+    "img": "nfc_card.png",
+    "main_route": "admin.plugin.status.nfc.cards.order"
+}    
